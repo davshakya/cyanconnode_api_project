@@ -40,7 +40,7 @@ def remove_unused_files_dir():
 
 
 def remove_output_file_dir():
-    output_file = "D:/Dev_Progs/cyanconnode_api_project/Test_case/my_json.json"
+    output_file = "D:/Dev_Progs/cyanconnode_api_projectmy.json"
     try:
         os.remove(output_file)
         print(f"The directory {output_file} has been deleted.")
@@ -49,8 +49,8 @@ def remove_output_file_dir():
 
 
 def create_output_json_file():
-    # remove_output_file_dir()
+    remove_output_file_dir()
     dictionary = {"user_details": [{"id": 5818968, "name": "Dev shakya", "email": "devshakya@hoeger-schiller.test", "gender": "male","status": "active"}]}
     json_object = json.dumps(dictionary, indent=4)
-    with open("D:/Dev_Progs/cyanconnode_api_project/Test_case/my_json.json", "w+") as outfile:
+    with open("my.json", "w+") as outfile:
         outfile.write(json_object)

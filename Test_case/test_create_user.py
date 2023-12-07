@@ -10,7 +10,7 @@ def test_create_user_from_excel_sheet(set_environment_variable):
     payload = TestData().get_user_details_from_excel_file()[1]
     header = TestData().header_method()
     payload_json = json.dumps(payload)
-    response = requests.request("POST", endpoint, headers=header, data=payload_json)
+    response = requests.request("POST", endpoint, headers=header, data=payload_json) # type: ignore
     res_dict = response.json()
     response_code = response.status_code
     assert response_code == 201, "User already exist"
@@ -26,7 +26,7 @@ def test_create_user_with_valid_values(set_environment_variable):
 
     payload['id'] = '5818268'
     payload['name'] = 'ra__erma'
-    payload['email'] = 'tdfgh8t8fdst@gmail.com'
+    payload['email'] = 'ddrrdd@gmail.com'
     payload['gender'] = 'male'
     payload['status'] = 'active'
     payload_json = json.dumps(payload)

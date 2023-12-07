@@ -41,7 +41,7 @@ class TestData:
         return self.endpoint_method_stage(env_value, request_method)
 
     def save_output_in_json_file(self, dict_object):
-        with open("my_json.json", 'r+') as json_file:
+        with open("my.json", 'r+') as json_file:
             file_data = json.load(json_file)
             file_data["user_details"].append(dict_object)
             json_file.seek(0)

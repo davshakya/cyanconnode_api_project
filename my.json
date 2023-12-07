@@ -7,12 +7,14 @@
             "gender": "male",
             "status": "active"
         },
-        {
-            "id": 5821272,
-            "name": "jhgf",
-            "email": "reev2@gmail.com",
-            "gender": "male",
-            "status": "active"
-        }
+        [
+            {
+                "id": 5820862,
+                "name": "iuy",
+                "email": "dttttreev1@gmail.com",
+                "gender": "male",
+                "status": "active"
+            }
+        ]
     ]
 }
