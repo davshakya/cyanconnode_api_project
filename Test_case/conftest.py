@@ -49,7 +49,7 @@ def remove_output_file_dir():
 
 
 def create_output_json_file():
-    remove_output_file_dir()
+    # remove_output_file_dir()
     dictionary = {"user_details": [{"id": 5818968, "name": "Dev shakya", "email": "devshakya@hoeger-schiller.test", "gender": "male","status": "active"}]}
     json_object = json.dumps(dictionary, indent=4)
     with open("D:/Dev_Progs/cyanconnode_api_project/Test_case/my_json.json", "w+") as outfile:

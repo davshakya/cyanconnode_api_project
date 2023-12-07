@@ -1,3 +1,6 @@
 {
-  "endpoint":"https://gorest.co.in/"
+  "endpoint_stage":"https://gorest.co.in/",
+  "endpoint_prod":"https://gorest.co.in/",
+  "create_user_param":"/public/v2/users",
+  "get_user_detail_param":"/public/v2/users"
 }
