@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Sep 01 15:22:01 IST 2022","Thu Sep 01 15:22:04 IST 2022","3257","Test_case","Test_Get_User_API","","","","test_get_user_with_invalid_value_002","create_user_with_invalid_values"
-"passed","Thu Sep 01 15:21:50 IST 2022","Thu Sep 01 15:21:57 IST 2022","6969","Test_case","Test_Create_User_API","","","","test_create_user_with_invalid_values_002","create_user_with_invalid_values"
-"passed","Thu Sep 01 15:21:57 IST 2022","Thu Sep 01 15:22:01 IST 2022","4376","Test_case","Test_Get_User_API","","","","test_get_user_with_valid_value_001","create_user_with_valid_values"
-"failed","Thu Sep 01 15:21:45 IST 2022","Thu Sep 01 15:21:50 IST 2022","4639","Test_case","Test_Create_User_API","","","","test_create_user_with_valid_values_001","create_user_with_valid_values"
