@@ -9,7 +9,7 @@ def test_get_user_with_valid_value_001(set_environment_variable):
     endpoint = TestData().get_endpoint_env("stag", 'get_details')
     payload = TestData().payload_method()
     header = TestData().header_method()
-    input_data = {"email": "dttttreev1@gmail.com"}
+    input_data = {"email": "reev2@gmail.com"}
     payload_json = json.dumps(input_data)
     response = requests.request("GET", endpoint, headers=header, data=payload_json)
     res_dict = response.json()
@@ -23,7 +23,7 @@ def test_get_user_with_invalid_value_002(set_environment_variable):
     endpoint = TestData().get_endpoint_env("stag", 'get_details')
     payload = TestData().payload_method()
     header = TestData().header_method()
-    input_data = {"email": "rrr@gmail.com"}
+    input_data = {"email": "dttsssev1@gmail.com"}
     payload_json = json.dumps(input_data)
     response = requests.request("GET", endpoint, headers=header, data=payload_json)
     res_dict = response.json()

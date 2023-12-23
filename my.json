@@ -6,6 +6,15 @@
             "email": "devshakya@hoeger-schiller.test",
             "gender": "male",
             "status": "active"
-        }
+        },
+        [
+            {
+                "id": 5848140,
+                "name": "jhgf",
+                "email": "reev2@gmail.com",
+                "gender": "male",
+                "status": "active"
+            }
+        ]
     ]
 }
