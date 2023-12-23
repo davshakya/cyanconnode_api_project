@@ -24,32 +24,32 @@ def pytest_addoption(parser):
 
 
 def remove_unused_files_dir():
-    directory_path = 'D:/Dev_Progs/cyanconnode_api_project/report'
-    cache_file1 = 'D:/Dev_Progs/cyanconnode_api_project/.pytest_cache'
-    cache_file2 = 'D:/Dev_Progs/cyanconnode_api_project/Test_case/.pytest_cache'
-    test_cache = 'D:/Dev_Progs/cyanconnode_api_project/Test_case/__pycache__'
+    directory_path = 'report'
+    # cache_file1 = '.pytest_cache'
+    # cache_file2 = '.pytest_cache'
+    test_cache = './Test_case/__pycache__'
 
     try:
         shutil.rmtree(directory_path)
-        shutil.rmtree(cache_file1)
-        shutil.rmtree(cache_file2)
+        # shutil.rmtree(cache_file1)
+        # shutil.rmtree(cache_file2)
         shutil.rmtree(test_cache)
         print(f"The directory {directory_path} has been deleted.")
     except:
         print(f"The directory {directory_path} does not exist.")
 
 
-def remove_output_file_dir():
-    output_file = "D:/Dev_Progs/cyanconnode_api_projectmy.json"
-    try:
-        os.remove(output_file)
-        print(f"The directory {output_file} has been deleted.")
-    except:
-        print(f"The directory {output_file} does not exist.")
+# def remove_output_file_dir():
+#     output_file = "my.json"
+#     try:
+#         os.remove(output_file)
+#         print(f"The directory {output_file} has been deleted.")
+#     except:
+#         print(f"The directory {output_file} does not exist.")
 
 
 def create_output_json_file():
-    remove_output_file_dir()
+    # remove_output_file_dir()
     dictionary = {"user_details": [{"id": 5818968, "name": "Dev shakya", "email": "devshakya@hoeger-schiller.test", "gender": "male","status": "active"}]}
     json_object = json.dumps(dictionary, indent=4)
     with open("my.json", "w+") as outfile:
