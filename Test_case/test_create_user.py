@@ -26,7 +26,7 @@ def test_create_user_with_valid_values(set_environment_variable):
 
     payload['id'] = '5818268'
     payload['name'] = 'ra__erma'
-    payload['email'] = 'ddrrtyrdd@gmail.com'
+    payload['email'] = 'ddrrxxxtyrdd@gmail.com'
     payload['gender'] = 'male'
     payload['status'] = 'active'
     payload_json = json.dumps(payload)
